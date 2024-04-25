@@ -2,6 +2,7 @@
 
 import { nanoid } from 'nanoid'; // pakiet do generowania identyfikatorów
 import { Component } from 'react';
+// import { useState, useEffect } from 'react';
 import css from './App.module.css';
 import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';

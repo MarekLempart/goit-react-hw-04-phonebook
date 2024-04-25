@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import css from './Filter.module.css';
 
 // Składnik filtrujący do wyszukiwania kontaktów według nazwy.
-// filter - zawiera wprowadzony tekst filtra.
-// onChangeInput - funkcję, która jest wywoływana po zmianie wartości filtra.
 export const Filter = ({ filter, onChangeInput }) => {
   return (
     <>
@@ -13,8 +11,8 @@ export const Filter = ({ filter, onChangeInput }) => {
         <br />
         <input
           className={css.inputContacts}
-          onChange={onChangeInput} // gdy zmieni się wartość pola - wywołanie funkcji onChangeInput
-          value={filter} // wartość początkową przechowywaną w polu filter
+          onChange={onChangeInput}
+          value={filter}
           type="text"
           name="filter"
         />
@@ -23,8 +21,7 @@ export const Filter = ({ filter, onChangeInput }) => {
   );
 };
 
-// wpisywanie
 Filter.propTypes = {
   filter: PropTypes.string.isRequired,
-  onChangeInput: PropTypes.func.isRequired, // funkcja
+  onChangeInput: PropTypes.func.isRequired,
 };

@@ -1,5 +1,4 @@
 // ResetButton.jsx
-// import React from "react";
 
 import PropTypes from 'prop-types';
 import css from './ResetButton.module.css';
